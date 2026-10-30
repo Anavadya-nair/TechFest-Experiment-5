@@ -1,8 +1,7 @@
-
 const allowedOrigins = [
-    "http://localhost:5173"
+    "http://localhost:5173",
+    "https://techfestexp5.netlify.app"
 ];
-
 function csrfProtection(req, res, next) {
     const methodsToProtect = ["POST", "PUT", "PATCH", "DELETE"];
 
