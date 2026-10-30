@@ -11,7 +11,7 @@ function Events() {
 
     const fetchEvents = () => {
         setLoading(true);
-        fetch("http://localhost:5000/api/events")
+        fetch("http://https://techfest-experiment-5.onrender.com/api/events")
             .then((res) => {
                 if (!res.ok) {
                     throw new Error("Failed to fetch events from backend");
@@ -24,7 +24,7 @@ function Events() {
                 setError(null);
             })
             .catch((err) => {
-                setError(err.message || "Could not connect to http://localhost:5000/api/events");
+                setError(err.message || "Could not connect to http://https://techfest-experiment-5.onrender.com/api/events");
                 setLoading(false);
             });
     };
@@ -50,7 +50,7 @@ function Events() {
         <main className="events-page">
             <h1>TechFest Events</h1>
             <p style={{ marginBottom: "25px", color: "#666" }}>
-                Live events powered by MongoDB backend (<code>http://localhost:5000/api/events</code>)
+                Live events powered by MongoDB backend (<code>http://https://techfest-experiment-5.onrender.com/api/events</code>)
             </p>
 
             <div className="search-container">

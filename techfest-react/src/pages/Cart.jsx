@@ -22,7 +22,7 @@ function Cart() {
 
             try {
                 const response = await fetch(
-                    "http://localhost:5000/api/registrations/my",
+                    "http://https://techfest-experiment-5.onrender.com/api/registrations/my",
                     {
                         credentials: "include"
                     }

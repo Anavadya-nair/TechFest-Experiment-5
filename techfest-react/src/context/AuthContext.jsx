@@ -12,7 +12,7 @@ export function AuthProvider({ children }) {
         async function checkLogin() {
             try {
                 const response = await fetch(
-                    "http://localhost:5000/api/auth/me",
+                    "http://https://techfest-experiment-5.onrender.com/api/auth/me",
                     {
                         credentials: "include"
                     }
@@ -42,7 +42,7 @@ export function AuthProvider({ children }) {
     // Logout user
     const logout = async () => {
         try {
-            await fetch("http://localhost:5000/api/auth/logout", {
+            await fetch("http://https://techfest-experiment-5.onrender.com/api/auth/logout", {
                 method: "POST",
                 credentials: "include"
             });

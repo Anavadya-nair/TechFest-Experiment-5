@@ -27,7 +27,7 @@ function EventCard({ id, name, fee, seats, onRegistered }) {
         setIsError(false);
 
         try {
-            const response = await fetch("http://localhost:5000/api/registrations", {
+            const response = await fetch("http://https://techfest-experiment-5.onrender.com/api/registrations", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
