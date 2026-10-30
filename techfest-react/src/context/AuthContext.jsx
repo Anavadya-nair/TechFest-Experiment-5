@@ -12,7 +12,7 @@ export function AuthProvider({ children }) {
         async function checkLogin() {
             try {
                 const response = await fetch(
-                    "http://https://techfest-experiment-5.onrender.com/api/auth/me",
+                    "https://techfest-experiment-5.onrender.com/api/auth/me",
                     {
                         credentials: "include"
                     }

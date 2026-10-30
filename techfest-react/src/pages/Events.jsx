@@ -11,7 +11,7 @@ function Events() {
 
     const fetchEvents = () => {
         setLoading(true);
-        fetch("http://https://techfest-experiment-5.onrender.com/api/events")
+        fetch("https://techfest-experiment-5.onrender.com/api/events")
             .then((res) => {
                 if (!res.ok) {
                     throw new Error("Failed to fetch events from backend");
