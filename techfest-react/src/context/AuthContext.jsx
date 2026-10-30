@@ -42,7 +42,7 @@ export function AuthProvider({ children }) {
     // Logout user
     const logout = async () => {
         try {
-            await fetch("http://https://techfest-experiment-5.onrender.com/api/auth/logout", {
+            await fetch("https://techfest-experiment-5.onrender.com/api/auth/logout", {
                 method: "POST",
                 credentials: "include"
             });
