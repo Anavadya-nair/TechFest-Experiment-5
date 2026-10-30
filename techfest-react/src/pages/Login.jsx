@@ -25,7 +25,7 @@ async function handleSubmit(e) {
 
     try {
         const response = await fetch(
-            "http://https://techfest-experiment-5.onrender.com/api/auth/login",
+            "https://techfest-experiment-5.onrender.com/api/auth/login",
             {
                 method: "POST",
                 headers: {
