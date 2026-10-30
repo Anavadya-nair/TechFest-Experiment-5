@@ -54,7 +54,7 @@ function Registration() {
         if (Object.keys(newErrors).length === 0) {
             setLoading(true);
             try {
-                const response = await fetch("http://https://techfest-experiment-5.onrender.com/api/auth/register", {
+                const response = await fetch("https://techfest-experiment-5.onrender.com/api/auth/register", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                      credentials: "include",
